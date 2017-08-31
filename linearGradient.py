@@ -1,3 +1,5 @@
+# from https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/
+
 from functools import reduce
 
 class Point:
