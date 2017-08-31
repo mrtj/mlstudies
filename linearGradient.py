@@ -29,7 +29,7 @@ def stepGradient(m_current, b_current, points, learningRate):
 
     >>> points = [Point(2, 1), Point(3, 2)]
     >>> print(stepGradient(0.5, -0.5, points, 0.1))
-    [0.9, -0.35]
+    (0.9, -0.35)
     """
     b_gradient = 0
     m_gradient = 0
@@ -44,6 +44,10 @@ def stepGradient(m_current, b_current, points, learningRate):
 def linearRegression(points, m_start, b_start, learningRate, iterations):
     """Calculates the linear regression of the points
 
+    >>> points = [Point(2, 1), Point(3, 2)]
+    >>> linearRegression(points, 0, 0, 0.1, 2)
+    #  0 m=0.000000, b=0.000000, err=2.500000
+    #  1 m=0.800000, b=0.300000, err=0.650000
     """
     b_current = b_start
     m_current = m_start
